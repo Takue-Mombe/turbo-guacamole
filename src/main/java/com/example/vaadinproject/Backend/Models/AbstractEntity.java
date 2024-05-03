@@ -1,4 +1,4 @@
-package com.example.vaadinproject.Backend;
+package com.example.vaadinproject.Backend.Models;
 
 
 
