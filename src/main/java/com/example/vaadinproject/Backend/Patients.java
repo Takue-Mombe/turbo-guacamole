@@ -9,5 +9,5 @@ import lombok.Setter;
 @Entity(name = "patients")
 @Getter@Setter
 @AllArgsConstructor@NoArgsConstructor
-public class Patients {
+public class Patients extends  AbstractEntity{
 }
