@@ -1,0 +1,17 @@
+/* PatientsListView
+.PatientsListView .content {
+    display: flex;
+}
+.PatientsListView .patientsForm {
+    flex: 2;
+}
+.PatientsListView .patientsForm {
+    flex: 1;
+    padding: var(--lumo-space-m);
+}
+@media all and (max-width: 1100px) {
+.PatientsListView.editing .toolbar,
+.PatientsListView.editing .PatientsGrid {
+    display: none;
+}
+}*/

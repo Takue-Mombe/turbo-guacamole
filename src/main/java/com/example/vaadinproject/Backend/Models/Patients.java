@@ -11,8 +11,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.NumberFormat;
+
+import java.time.LocalDate;
 
 @Entity(name = "patients")
 @Getter@Setter
@@ -23,8 +24,8 @@ public class Patients extends  AbstractEntity{
     @NotNull
     @NotEmpty
     private String fullName;
-    @DateTimeFormat
-    private String dateOfBirth;
+
+    private LocalDate dateOfBirth;
     private String gender;
     private String maritalStatus;
     private String occupation;
