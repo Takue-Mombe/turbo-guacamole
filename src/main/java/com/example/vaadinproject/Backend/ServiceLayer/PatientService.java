@@ -14,6 +14,12 @@ public class PatientService {
     public List<Patients>getAll(){
         return patientsRepository.findAll();
     }
+    public List<Patients>getAll(String filterText){
+        if (filterText==null||filterText.isEmpty()){
+            return patientsRepository.findAll();
+        }
+        return  patientsRepository.search(filterText);
+    }
     public void save(Patients patients){
         patientsRepository.save(patients);
         System.out.println(patients.getPatientNumber());
